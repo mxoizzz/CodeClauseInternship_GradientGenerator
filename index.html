@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>Gradient Generator</h1>
+
+    <div class="controls">
+      <div class="row">
+        <label>Color 1</label>
+        <input type="color" id="color1" value="#eaeaea">
+      </div>
+
+      <div class="row">
+        <label>Color 2</label>
+        <input type="color" id="color2" value="#cfcfcf">
+      </div>
+
+      <div class="row">
+        <label>Type</label>
+        <select id="type">
+          <option value="linear">Linear</option>
+          <option value="radial">Radial</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>Angle</label>
+        <input type="range" id="angle" min="0" max="360" value="90">
+        <span id="angleValue">90°</span>
+      </div>
+    </div>
+
+    <div class="preview" id="preview"></div>
+
+    <pre id="cssCode"></pre>
+    <button id="copyBtn">Copy CSS</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
