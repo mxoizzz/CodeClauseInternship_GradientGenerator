@@ -52,7 +52,7 @@ This project is developed as part of the **CodeClause Web Development Internship
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/CodeClauseInternship_GradientGenerator.git
+   git clone https://github.com/mxoizzz/CodeClauseInternship_GradientGenerator.git
    ```
 2. Open `index.html` in any modern browser.
 3. Customize colors and generate gradients instantly.
