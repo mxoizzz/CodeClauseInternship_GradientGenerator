@@ -6,17 +6,17 @@ const angleValue = document.getElementById("angleValue");
 const preview = document.getElementById("preview");
 const cssCode = document.getElementById("cssCode");
 const copyBtn = document.getElementById("copyBtn");
+const angleRow = document.querySelector(".angle-row");
 
 function updateGradient() {
-  angleValue.textContent = angle.value + "°";
-
   let gradient;
+
   if (type.value === "linear") {
-    angle.parentElement.style.display = "flex";
-    angleValue.style.display = "inline";
+    angleRow.style.display = "flex";
+    angleValue.textContent = angle.value + "°";
     gradient = `linear-gradient(${angle.value}deg, ${color1.value}, ${color2.value})`;
   } else {
-    angle.parentElement.style.display = "none";
+    angleRow.style.display = "none";
     gradient = `radial-gradient(circle, ${color1.value}, ${color2.value})`;
   }
 
